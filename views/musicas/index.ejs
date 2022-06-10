@@ -1,0 +1,31 @@
+<%- include("../components/head.ejs") %>
+<%- include("../components/menu.ejs") %>
+
+<div class="container">
+  <div class="action-area">
+    <h1>Lista de Músicas</h1>
+    <button id='btn-add' type='button' class='btn btn-outline-success' onclick="window.location.href='/musicas/add-musica'">Nova +</button>
+  </div>
+  <div class="table-area">
+    <table class='table table-bordered'>
+      <thead>
+        <th>Nome</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <% musicas.forEach(musica => { %>
+          <tr>
+            <td><%= musica.nome %> (<%= musica.cantore.nome %>)</td>
+            <td id="button-area">
+              <button id="deleteButton">
+                <i class="fas fa-trash" id="icon-trash"></i>
+              </button>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include("../components/footer.ejs") %>

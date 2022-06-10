@@ -1,0 +1,32 @@
+body,
+html {
+  height: 100vh;
+
+  margin: 0;
+}
+
+.action-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-direction: row;
+
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#deleteButton {
+  background: #ffffff;
+
+  border: none;
+}
+
+#icon-trash {
+  color: #980000;
+}
+
+#button-area {
+  width: 70px;
+  text-align: center;
+}

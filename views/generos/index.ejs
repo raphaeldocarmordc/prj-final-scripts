@@ -1,0 +1,31 @@
+<%- include("../components/head.ejs") %>
+<%- include("../components/menu.ejs") %>
+
+<div class="container">
+  <div class="action-area">
+    <h1>Lista de Gêneros</h1>
+    <button id='btn-add' type='button' class='btn btn-outline-success' onclick="window.location.href='/generos/add-generos'">Nova +</button>
+  </div>
+  <div class="table-area">
+    <table class='table table-bordered'>
+      <thead>
+        <th>Gêneros</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <% generos.forEach(genero => { %>
+          <tr>
+            <td><%= genero.genero %></td>
+            <td id="button-area">
+              <button onclick="window.location.href='/generos/excluir/<%= genero.id %>'" id="deleteButton">
+                <i class="fas fa-trash" id="icon-trash"></i>
+              </button>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include("../components/footer.ejs") %>

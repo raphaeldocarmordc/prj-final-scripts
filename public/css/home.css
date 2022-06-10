@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100vh;
+
+  margin: 0;
+}
+
+.content {
+  height: 90vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title-home {
+  height: 100vh;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 600;
+  font-size: 80px;
+
+  margin-left: 50px;
+}
+
+#image-home {
+  height: 100vh;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
